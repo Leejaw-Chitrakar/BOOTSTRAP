@@ -1,0 +1,19 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background: skyblue;
+    float: left;
+    text-align: justify;
+    box-sizing: border-box;
+    /* Padding indicates the space between the content and the border */
+    padding: 50px 30px;
+    /* padding-left: 30px; */
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background: red;
+    /* margin="auto" to set the content in the middle */
+    margin: 20px;
+}

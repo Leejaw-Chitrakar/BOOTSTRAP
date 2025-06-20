@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+<body>
+    <form method="get" action="https://www.google.com" target="_blank">
+        <fieldset>
+            <legend>HTML FORM</legend>
+            <label for="abc">Enter First name: </label>
+            <input type="text" name="fname" id="abc" placeholder="Enter your first name">
+            <!-- for rw id same hunu pareyou -->
+            <br>
+            <br>
+            <label for="abc">Enter Last Name:</label>
+            <input type="text" name="lname" id="abc" placeholder="Enter you lasrt name">
+            <!-- for rw id same hunu pareyou -->
+            <hr>
+
+            Enter Age: <input type="number" name="age" min="1" max="18">
+            <hr>
+            Enter Email: <input type="email" name="email" placeholder="Enter Your Email">
+            <hr>
+            Enter Password: <input type="password" name="password" placeholder="Enter Your Password">
+            <br>
+            Gender: 
+            <input type="radio" name="gen" value="boy" checked>Male
+            <!-- checked is used to check a option by default -->
+            <input type="radio" name="gen" value="girl">Female
+            <!-- For type radio name has to be same -->
+            <br>
+
+            Select years: <select name="birthday" size="3" multiple>
+                <option>1998</option>
+                <option>1999</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+                <option selected>2006</option>
+                <option>2007</option>
+            </select>
+            <hr>
+            <br>
+
+            Message: 
+            <textarea name="mess" cols="30" rows="10">
+
+            </textarea>
+
+            <hr>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* This is for CSS.html file */
+h3 {
+    background: darkblue;
+    color: yellow;
+    width: 500px;
+    height: 500px;
+}
+
+/* This is for division.html file */
+
+.abc {
+    background: aqua;
+    color: yellow;
+}
+
+.def {
+    background: skyblue;
+    color: white;
+}
+
+.co {
+    width: 200px;
+    height: 300px;
+}
+
+/* This is for float(concept).html file */
+
+.a {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    float: left;
+}
+
+.b {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    float: right;
+}
+
+.c {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    float: left;
+}
+
+.d {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* This is for template.html file */
+
+.page {
+    background: #eee;
+    height: 400px;
+}
+
+.header {
+    height: 120px;
+    background: skyblue;
+    color: #fff;
+    font-size: 22px;
+}
+
+.logo {
+    float: left;
+}
+
+.ph {
+    float: right;
+}
+
+.menu {
+    height: 45px;
+    background: rebeccapurple;
+}
+
+.content {
+    height: 200px;
+    background: aquamarine;
+}
+
+.left {
+    float: left;
+    width: 70%;
+    text-align: justify;
+    background: red;
+}
+
+.right {
+    float: right;
+    width: 30%;
+    text-align: justify;
+    background: blue;
+}
+
+.right img {
+    width: 100%;
+    height: 200px;
+    float: right;
+}

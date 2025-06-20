@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <form action="get" target="_blank">
+        <fieldset>
+            <legend>Employee Details</legend>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="first-name" placeholder="First Name">
+            <br>
+            <br>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="last-name" placeholder="Last Name">
+            <br>
+            <br>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gen" value="boy" checked>Male
+            <input type="radio" name="gen" value="girl">Female
+            <br>
+            <br>
+            <label for="E-ID">Employee ID: </label>
+            <input type="number" name="employee-id" id="E-id" min="1" max="15">
+            <br>
+            <br>
+            <label for="contact">Contact Number: </label>
+            <input type="number" name="cont" id="contact">
+            <br>
+            <br>
+            <label for="home">Contry: </label>
+            <select name="country" id="home">
+                <option>Nepal</option>
+                <option>China</option>
+                <option>Bhutan</option>
+                <option>India</option>
+                <option>Australia</option>
+                <option>America</option>
+                <option>Malaysia</option>
+                <option>Indonesia</option>
+                <option>Brazil</option>
+                <option>Portugal</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>

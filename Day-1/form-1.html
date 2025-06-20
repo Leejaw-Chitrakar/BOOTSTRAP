@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- method="get" for data read (retrival of data)-->
+    <!-- method="post" for data creation -->
+    <!-- Get is not srcure post is secure -->
+    <!-- In production post method is used -->
+    <!-- While using post entered data are not shown in the url -->
+
+    <form method="get" action="">
+        Normal Text 1 <input type="text" name="fname" >
+        <!-- When required is used the element has to be attained -->
+        <br>
+
+        Normal Text 2 <input type="text" name="n" value="Leejaw" readonly>
+        <br>
+
+        Normal Text 3 <input type="text" name="o" value="Dummy Content" disabled >
+        <!-- When disabled is used text is shown but value is not passed  -->
+        <br>
+
+        Normal Text 4 <input type="hidden" name="p" value="Ball">
+        <!-- When hidded is used the element is not shown but can be seen in url -->
+        <br>
+
+        Normal Text 5 <input type="text" name="q" value="" autofocus>
+        <!-- Cursor moves to the element when the page is loaded -->
+        <br>
+
+        Normal Text 6 <input type="text" name="r" placeholder="Enter your Address" autocomplete="off">
+        <!-- shows the history (mostly used for password) -->
+        <br>
+
+        <br>
+        <button>Submit</button>
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="reset" value="Reset">
+        <!-- we can use any way -->
+    </form>
+</body>
+</html> 
