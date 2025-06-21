@@ -33,6 +33,11 @@ header {
     text-align: right;
 }
 
+.top-right p{
+    padding: 10px;
+
+}
+
 nav {
     float: right;
 }
