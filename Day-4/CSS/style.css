@@ -33,7 +33,7 @@ header {
     text-align: right;
 }
 
-.top-right p{
+.top-right p {
     padding: 10px;
 
 }
@@ -49,6 +49,8 @@ nav ul {
 nav ul li {
     float: left;
     font-size: 18px;
+    position: relative;
+
 }
 
 nav ul li a {
@@ -60,7 +62,8 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover, .active a{
+nav ul li a:hover,
+.active a {
     background: #d7d7d7;
     color: orange;
     text-shadow: black 1px 2px 2px;
@@ -91,7 +94,7 @@ main ul {
     padding: 20px 20px 0 20px;
 }
 
-h2{
+h2 {
     color: #1d74a8;
 }
 
@@ -100,6 +103,7 @@ h2{
     float: left;
     padding-right: 50px;
     border-right: 1px dotted;
+    height: 75vh;
 }
 
 .p2 {
@@ -112,37 +116,69 @@ h2{
     text-align: left;
 }
 
-.p2 ul li a{
+.p2 ul li a {
     text-decoration: none;
     color: #044470;
 
 }
 
-.p2 ul li a:hover{
+.p2 ul li a:hover {
     color: darkred;
     text-shadow: black 0px 0px 1px;
 }
 
-.p2 ul li{
+.p2 ul li {
     padding-top: 10px;
     font-weight: bold;
 
 }
-.m2 h5{
+
+.m2 h5 {
     font-weight: 600;
 }
 
-.t1{
+.t1 {
     float: left;
 }
 
-.t2{
+.t2 {
     float: right;
 }
 
-footer{
+footer {
     background: #054470;
     color: #fff;
     padding: 5px 25px;
     font-size: 13px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+    border-radius: 0.5rem;
+    padding: 1px;
+    left: 0;
+    top: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 5px 3px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px dotted #000;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+nav ul .dropdown-content a {
+    list-style-type: circle;
 }
