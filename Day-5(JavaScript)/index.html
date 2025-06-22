@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    Hello World
+    <script>
+        console.log('Internal JavaScript')
+
+        // variable j ni deena milxa
+        // Works from Top-to-Bottom
+        // '' and "" both works
+        // ; not required at the end of the line
+
+        username = "John Doe"
+        username = '144'
+
+
+        console.log(username)
+
+        // Types of variable
+
+        name = "Adam" //string
+        age = 21 //int
+        bigNum = 10n //bigint
+        status = true  //or false //boolean //takes it as a string yet its boolean
+
+        // backend -> respond -> data -> object -> {......} ki certain value ki emply []
+
+        //important
+        data = null //send or set by developer themself
+        anotherData = undefined //set by server or javascript itself
+
+        console.log(name)
+        console.log(age)
+        console.log(bigNum)
+        console.log(status)
+        console.log(data)
+        console.log(anotherData)
+
+        console.log(typeof name)
+        console.log(typeof age)
+        console.log(typeof bigNum)
+        console.log(typeof status)
+        console.log(typeof data)
+        console.log(typeof anotherData)
+
+        console.log("--------------------Secound Part--------------------")
+
+        // how to define variable
+        // latest js es6 | previously es5
+
+
+        var username = "John Doe" //var is function scope
+        console.log(username)
+        var username = "Adam Doe" //data is overwritten
+        console.log(username)
+
+
+        // in es6 (let and const)
+        // problem of var was solved by let and const
+        // let username = "john Doe"
+        // const data = 'some data'
+        
+        // while using let value should be used only inside the block
+        if(true){
+            let letValue = 'this is let'
+            console.log(letValue)
+        }
+
+        //while using const value can be used everywhere
+        const constValue = 'this is const'
+        if(true){
+            console.log(constValue)
+        }
+
+
+        console.log("--------------------Third Part--------------------")
+       
+        const name1 = "Tadashi"
+        const age1 = 24
+        const address1 = "Kathmandu"
+        
+        console.log(name1)
+        console.log(age1)
+        console.log(address1)
+
+        // Method 1:
+        console.log(`${name1} is ${age1} years old and from ${address1}`)
+        
+        // Method 2:
+        console.log(`My name is ${name1}. I am ${age1} years old and I live in ${address1}`) //mainly used
+
+        console.warn("This is console warn.")
+        console.error("This is console error.")
+
+        const status1 = false
+
+        // if(statue){
+        //     console.log('This is true status1.')
+        // }else{
+        //     console.log('This is false status1.')
+
+        // }
+
+        if(status1){
+            console.log('This is true status1.')
+        } else if (!status1) { //ture lai false rw false lai true
+            console.log('This is ! status1.')
+        } else {
+            console.log('This is unknown.')
+        }
+
+        console.log("--------------------Fourth Part--------------------")
+
+        // Functions
+        // Method 1: (es5)
+
+        function logMyName(){
+            //logic here
+            console.log(`Hello for Tadashi`)
+        }
+
+        // Method 2: (es6)
+        // Arrow function (Prefered in mordern JavaScript) (used in react)
+        const myName = () => {
+            console.log(`Arrow function call`)
+        }
+
+
+        logMyName()
+        myName()
+
+
+
+        function logMyFname( first = `first`){
+            //logic here
+            console.log(`Default function keyword: ${first}`)
+        }
+
+        // default
+        logMyFname()
+        // custom
+        logMyFname(`Ron`)
+
+
+        function spradeOperator(first = `first`, ...args){
+            console.log(`Spread operator example: ${first} ${args}`)
+        }
+
+        spradeOperator('custom', 'second', 'third')
+        
+        // Conslusion
+        // 1. Variable Types
+        // 2. Data Types (imp) 
+        // 3. if else
+        // 4. Sprade Operator
+        // 5. Arrow Functions (imp)
+        // 6. Default Parameters
+
+
+    </script>
+</body>
+
+</html>
