@@ -1,0 +1,9 @@
+const name = "          Hello Leejaw"
+console.log(name.length)
+console.log(name)
+console.log(name.trim()) //removes spaces
+console.log(name.toUpperCase())
+console.log(name.toLowerCase())
+console.log(name.includes("Leejaw"))
+console.log(name.includes("Chitrakar"))
+console.log(name.replace("Leejaw", "World!!"))

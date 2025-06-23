@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <!-- Seventh Part -->
+
+        <input type="password" name="" id="fn">
+        <button onclick="abc()">Hide/Show</button>
+
+        <script>
+            function abc() {
+                let a = document.getElementById('fn')
+                if (a.type == 'password') {
+                    a.type = 'text'
+                }
+                else {
+                    a.type = 'password'
+                }
+            }
+        </script>
+
+
+        <button onclick="document.getElementById('abc').src='./img/bean.jpg'">off</button>
+        <img src="./img/bean.jpg" alt="Mr. Bean" id="abc" width="190px">
+        <button onclick="document.getElementById('abc').src='./img/logo.gif'">on</button>
+
+
+        
+    </body>
+
+</html>

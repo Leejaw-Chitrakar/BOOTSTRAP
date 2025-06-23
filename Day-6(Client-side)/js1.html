@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <!-- Fifth Part -->
+
+
+        <div id="demo">
+            <h1>Hello World!!</h1>
+        </div>
+
+        <button onclick="document.getElementById('demo').style.display='none'">HIDE</button>
+        <button onclick="document.getElementById('demo').style.display='block'">SHOW</button><br>
+
+
+        <button onclick="document.getElementById('demo').style.fontSize='99px'">Increase font size</button>
+        <button onclick="document.getElementById('demo').style.fontSize='10px'">Decrease font size</button><br>
+
+        <button onclick="document.getElementById('demo').style.color='red'">Change to red</button>
+        <button onclick="document.getElementById('demo').style.background='skyblue'">Change to background
+            skyblue</button><br>
+
+
+        <button onclick="abc()">Multiple Function</button><br>
+
+        <script>
+
+            function abc() {
+                document.getElementById('demo').style.fontSize = '30px';
+                document.getElementById('demo').style.color = 'green';
+                document.getElementById('demo').style.background = 'yellow';
+            }
+
+
+        </script>
+
+            
+
+
+    </body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <!-- First Part -->
+
+        <script>
+
+            document.write("<h1>Hello World!!</h1>") //used to display in web page
+            let name = 'Leejaw Chitrakar'
+            let contact = '9841234567'
+
+            document.write(name)
+            document.write("'s number is ")
+            document.write(contact)
+
+            document.write("<br>" + name + "'s number is " + contact)
+
+
+            let a = "3"
+            let b = "9"
+            let c = +a + +b
+            document.write("<br>" + "a + b = " + c + "<br>")
+
+
+            let aa = 3
+            if (aa > 5) {
+                document.write("HELLO")
+            } else {
+                document.write("WELCOME")
+            }
+
+
+            let count = 0
+            while (count < 10) {
+                document.write("<h1>Leejaw " + count + "</h1>")
+                count++
+            }
+
+        </script>
+
+
+        <!-- Second Part -->
+
+        <select>
+            <option>Years</option>
+            <script>
+                let s = 1985
+                while (s <= 2025) {
+                    document.write("<option>" + s + "</option>")
+                    s++
+                }
+            </script>
+        </select>
+
+
+        <!-- Third Part -->
+
+        <button onclick="abc('Nepal', 9841234567)">Click Me Nepal</button>
+        <button onclick="abc('USA', 9841234568)">Click Me USA</button>
+
+        <script>
+            function abc(country, number) {
+                alert("Counrty" + " is " + country)
+                alert("Number" + " is " + number)
+            }
+        </script>
+
+
+        <!-- Fourth Part -->
+
+        <div id="ram" style="border: 3px solid red; padding-top: 40px;">
+            <button onclick="bcd()">Show date</button>
+        </div>
+
+        <script>
+            function bcd() {
+                document.getElementById("ram").innerHTML = Date()
+            }
+        </script>
+
+        <hr>
+        <hr>
+
+
+        <div id="sita" style="border: 4px solid #000; padding: 50px;">
+
+            <button onclick="tt('Nepal')">Nepal</button>
+            <button onclick="tt('USA')">USA</button>
+
+
+            <script>
+                function tt(country) {
+                    document.getElementById('sita').innerHTML = country
+                }
+            </script>
+
+        </div>
+        
+
+    </body>
+
+</html>
