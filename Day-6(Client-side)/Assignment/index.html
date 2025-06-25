@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <h2>!Register!Register!Register!</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form method="get" onsubmit="nameset(event)">
+            <div class="form-label">
+                <label for="name">Full Name: </label>
+                <label for="email">Email: </label>
+                <label for="password">Password: </label>
+                <label for="address">Address: </label>
+                <label for="contact">Contact: </label>
+                <label for="genderMale">Gender: </label>
+                <label for="DOB">Date of Birth: </label>
+            </div>
+            <div class="form-input">
+                <input type="text" id="name" placeholder="Full Name">
+                <span class="error-message" id="nameError"></span>
+
+                <input type="email" id="email" placeholder="Email">
+                <span class="error-message" id="emailError"></span>
+
+                <div class="password">
+                    <input type="password" id="pass" placeholder="Password">
+                    <button onclick="SHpass()">Hide/Show</button>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <input type="text" id="address" placeholder="Address">
+                <span class="error-message" id="addressError"></span>
+
+                <input type="number" id="contact" placeholder="Contact Number">
+                <span class="error-message" id="contactError"></span>
+
+                <div class="gender">
+                    <input type="radio" id="genderMale" value="male" name="gen" checked>Male
+                    <input type="radio" id="genderFemale" value="female" name="gen">Female
+                </div>
+                <span class="error-message" id="genderError"></span>
+
+                <input type="date" id="DOB">
+                <span class="error-message" id="dobError"></span>
+            </div>
+            <div class="btn">
+                <button type="submit" name="submit">Submit</button>
+                <button type="reset" name="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer">
+            <marquee behavior="repeat" direction="" scrollamounth="5">
+                WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME
+                WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME  
+                WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME  
+                WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME
+                WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME
+            </marquee>
+        </div>
+    </footer>
+</body>
+
+</html>
