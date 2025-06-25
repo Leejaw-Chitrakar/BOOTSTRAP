@@ -3,7 +3,7 @@ function nameset(event) {
 
     const name = document.getElementById('name').value
     const email = document.getElementById('email').value
-    const password = document.getElementById('password').value
+    const password = document.getElementById('pass').value
     const address = document.getElementById('address').value
     const contact = document.getElementById('contact').value
     const selectedGenderElement = document.querySelector('input[name="gen"]:checked')
