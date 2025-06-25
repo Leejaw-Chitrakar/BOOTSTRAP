@@ -16,7 +16,7 @@ firstElement.appendChild(newElement)
 
 // ----------------------- For Button -----------------------
 
-const statusContent = document.getElementById('status')
+const statusContent = document.getElementById('btnstatus')
 
 // // event Listener -> 'click'
 const myButton = document.getElementById('mybtn')
@@ -31,15 +31,17 @@ myButton.addEventListener('click', function () {
 
 // event Listener -> focus & blur
 const input = document.getElementById('myinput')
+const inputcontent = document.getElementById('inputstatus')
+
 input.addEventListener('focus', function () {
   console.log('input focused')
   input.style.border = '2px solid red'
-  statusContent.textContent = 'Typing Started'
+  inputstatus.textContent = 'Typing Started'
 })
 
 input.addEventListener('blur', function () {
   input.style.border = '1px solid red'
-  statusContent.textContent = 'Typing Ended'
+  inputstatus.textContent = 'Typing Ended'
 })
 
 // ----------------------- For Select -----------------------
