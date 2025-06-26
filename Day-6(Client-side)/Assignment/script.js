@@ -83,3 +83,19 @@ function SHpass() {
         a.type = 'password'
     }
 }
+
+let input = document.getElementById('pass')
+
+input.addEventListener('blur', function () {
+    console.log('input focused')
+const password = document.getElementById('pass').value
+
+    if (password.length < 8) {
+        // document.getElementById('passwordError').textContent = 'Password must be at least 8 characters long.'
+        input.style.border = '2px solid red'
+        console.log(password.length)
+    }else{
+        input.style.border = '2px solid black'
+        console.log("one")
+    }
+})

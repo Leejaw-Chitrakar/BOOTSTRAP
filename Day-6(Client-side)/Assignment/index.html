@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -30,31 +29,31 @@
             </div>
             <div class="form-input">
                 <input type="text" id="name" placeholder="Full Name">
-                <span class="error-message" id="nameError"></span>
+                <p id="nameError"></p>
 
                 <input type="email" id="email" placeholder="Email">
-                <span class="error-message" id="emailError"></span>
+                <p id="emailError"></p>
 
                 <div class="password">
                     <input type="password" id="pass" placeholder="Password">
-                    <button onclick="SHpass()">Hide/Show</button>
-                    <span class="error-message" id="passwordError"></span>
+                    <button onclick="SHpass()" type="button">Hide/Show</button>
+                    <p id="passwordError"></p>
                 </div>
 
                 <input type="text" id="address" placeholder="Address">
-                <span class="error-message" id="addressError"></span>
+                <p id="addressError"></p>
 
                 <input type="number" id="contact" placeholder="Contact Number">
-                <span class="error-message" id="contactError"></span>
-
+                <p id="contactError"></p>
+                
                 <div class="gender">
                     <input type="radio" id="genderMale" value="male" name="gen" checked>Male
                     <input type="radio" id="genderFemale" value="female" name="gen">Female
                 </div>
-                <span class="error-message" id="genderError"></span>
-
+                <p id="genderError"></p>
+                
                 <input type="date" id="DOB">
-                <span class="error-message" id="dobError"></span>
+                <p id="dobError"></p>
             </div>
             <div class="btn">
                 <button type="submit" name="submit">Submit</button>
@@ -73,6 +72,7 @@
             </marquee>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
