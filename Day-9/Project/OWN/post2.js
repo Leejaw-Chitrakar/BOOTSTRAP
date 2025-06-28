@@ -14,7 +14,7 @@ function fetchposts() {
             const postlist = document.getElementById("postlist")
             postlist.innerHTML = ''
 
-            postlist.forEach((post) => {
+            data.forEach((post) => {
                 const li = document.createElement('li')
                 li.innerHTML = `
                 <strong>ID:</strong> ${post.id}
@@ -25,13 +25,14 @@ function fetchposts() {
                 <br>
                 <strong>Body:</strong> ${post.body}
                 `
-                photolist.appendChild(li)
+                postlist.appendChild(li)
             })
         })
         .catch((error) => {
             console.error('Error fetching post:', error)
         })
 }
+fetchposts()
 
 //fetch post() 
 function addpost() {
