@@ -86,7 +86,7 @@ const App = () => {
       <input style={{ marginLeft: 675 }} type="text" placeholder="type something here...." onChange={handelonchange} />
       <br />
       <br />
-      <button onClick={() => setstatus(!status)} style={{ marginLeft: 710 }}>Change Status</button>
+      <button onClick={() => setstatus(!status)} style={{ marginLeft: 690 }}>Change Status</button>
     </>
   )
 }

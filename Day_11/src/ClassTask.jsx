@@ -34,13 +34,13 @@ export const ClassTask = () => {
     }
     return (
         <>
-        <h1>---------------------------------------------------------------------------------------------------------------------------------------------</h1>
+        <h1>-------------------------------------------------------------------------</h1>
         <br />
             <input
                 onChange={handelonchange}
                 type="text"
                 placeholder="Type something here..."
-                style={{display: 'flex', justifyContent: 'center',marginLeft: 675}}
+                style={{display: 'flex', justifyContent: 'center',marginLeft: 680}}
             ></input>
             <br />
             <br />

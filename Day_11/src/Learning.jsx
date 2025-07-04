@@ -25,13 +25,13 @@ export const Learning = () => {
     return (
         <>
             <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <h1>---------------------------------------------------------------------------------------------------------------------------------------------</h1>
+                <h1>-------------------------------------------------------------------------</h1>
                 <input type="text" onChange={handleOnChange}
                     placeholder="Type something here..."
                 />
                 <br />
                 <br />
-                <button  onClick={() => setStatus(!status)}>Show/Hide Value</button>
+                <button onClick={() => setStatus(!status)}>Show/Hide Value</button>
                 {status ? <Show /> : <Hide />}
             </div>
         </>
